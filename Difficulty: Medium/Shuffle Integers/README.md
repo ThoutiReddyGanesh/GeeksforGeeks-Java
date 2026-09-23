@@ -1,0 +1,10 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/shuffle-integers2401/1">Shuffle Integers</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO" style="--text-color: var(--problem-text-color);"><p><span style="font-size: 18px;">Given an array <strong>arr[]</strong> of <strong>n</strong> elements in the form <strong>{a1, a2, a3, ..., a(n/2), b1, b2, b3, ..., b(n/2)}</strong>, rearrange the array in place to <strong>{a1, b1, a2, b2, a3, b3, ..., a(n/2), b(n/2)}</strong> without using extra space.</span></p>
+<p><span style="font-size: 18px;"><strong>Note:</strong> <strong>n</strong> is always even.</span></p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong style="font-size: 18px;">Input: </strong><span style="font-size: 18px;">arr[] = [1, 2, 9, 15]
+<strong>Output:</strong> [1, 9, 2, 15]
+<strong>Explanation:</strong> Here a1 = 1, a2 = 2, b1 = 9, b2 = 15. The final array becomes a1, b1, a2, b2 = [1, 9, 2, 15].</span></span></pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong></span><span style="font-size: 18px;">arr[] = [1, 2, 3, 4, 5, 6]
+<strong>Output:</strong> [1, 4, 2, 5, 3, 6]
+<strong>Explanation:</strong> Here a1 = 1, a2 = 2, a3 = 3, b1 = 4, b2 = 5, b3 = 6. The final array becomes a1, b1, a2, b2, a3, b3 = [1, 4, 2, 5, 3, 6].</span></pre>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 ≤ n ≤ 10<sup>5</sup><br></span><span style="font-size: 18px;">1 ≤ arr[i]</span><span style="font-size: 18px;">≤ 10<sup>3</sup></span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Amazon</code>&nbsp;<code>OYO Rooms</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Arrays</code>&nbsp;<code>Recursion</code>&nbsp;
