@@ -40,7 +40,7 @@ Explanation: There is no next greater element for any of the elements in the arr
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-03T08:11:26.661Z  
+**Submitted:** 2026-10-03T08:19:28.154Z  
 
 ```java
 class Solution {
@@ -65,34 +65,23 @@ class Solution {
     }
 }*/
 ArrayList<Integer> al=new ArrayList<>();
- Stack<Integer> st=new Stack<>();
- int i=arr.length-1;
+Stack<Integer> st=new Stack<>();
 
- while(i>=0){
-     if(st.isEmpty()){
-         st.push(arr[i]);
-         al.add(-1);
-     }
-     else if(arr[i]>=st.peek()){
-         while(!st.isEmpty()&&arr[i]>=st.peek())
-             st.pop();
+for(int i=arr.length-1;i>=0;i--){
+    while(!st.isEmpty()&&arr[i]>=st.peek())
+        st.pop();
 
-         if(st.isEmpty())
-             al.add(-1);
-         else
-             al.add(st.peek());
+    if(st.isEmpty())
+        al.add(0,-1);
+    else
+        al.add(0,st.peek());
 
-         st.push(arr[i]);
-     }
-     else{
-         al.add(st.peek());
-         st.push(arr[i]);
-     }
-     i--;
- }
+    st.push(arr[i]);
+}
 
- Collections.reverse(al);
- return al;}}
+return al;
+}
+}
 ```
 
 ---
