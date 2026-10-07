@@ -8,7 +8,6 @@ class Solution {
             if(arr[i]==arr[n]) c++;i++;
             
         }
-        if(c>n) return true;
-        return false;
+return c>n;
     }
 }
