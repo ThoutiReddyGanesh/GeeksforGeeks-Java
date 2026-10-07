@@ -29,7 +29,7 @@ Explanation: The size of the array is 8. The middle element is arr[8/2] = arr[4]
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T10:59:11.607Z  
+**Submitted:** 2026-10-07T11:07:22.033Z  
 
 ```java
 class Solution {
@@ -42,8 +42,7 @@ class Solution {
             if(arr[i]==arr[n]) c++;i++;
             
         }
-        if(c>n) return true;
-        return false;
+return c>n;
     }
 }
 ```
